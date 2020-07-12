@@ -1,0 +1,8 @@
+{
+  "name": "tinderMe-apis",
+  "version": "1.0.0",
+  "description": "API's do app Tinder Me usando GraphQL e MongoDB",
+  "main": "index.ts",
+  "author": "Guilherme Vieira de Paiva",
+  "license": "MIT"
+}
