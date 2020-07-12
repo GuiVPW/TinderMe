@@ -1,8 +1,52 @@
 {
-  "name": "tinderMe-apis",
-  "version": "1.0.0",
-  "description": "API's do app Tinder Me usando GraphQL e MongoDB",
-  "main": "index.ts",
-  "author": "Guilherme Vieira de Paiva",
-  "license": "MIT"
+	"name": "tinderme-backend",
+	"version": "1.0.0",
+	"description": "API's do app Tinder Me usando GraphQL e MongoDB",
+	"author": "Guilherme Vieira de Paiva",
+	"main": "./src/server.ts",
+	"license": "MIT",
+	"compilerOptions": {
+		"include": [
+			"src/**/*.ts"
+		],
+		"exclude": [
+			"node_modules"
+		]
+	},
+	"scripts": {
+		"dev": "nodemon ./src/server.ts",
+		"start": "ts-node ./src/server.ts"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.7",
+		"@types/mongoose": "^5.7.31",
+		"@types/nodemon": "^1.19.0",
+		"@types/sharp": "^0.25.0",
+		"husky": "^4.2.5",
+		"nodemon": "^2.0.4",
+		"prettier": "2.0.5",
+		"pretty-quick": "^2.0.1"
+	},
+	"dependencies": {
+		"@types/dotenv-safe": "^8.1.0",
+		"@types/jsonwebtoken": "^8.5.0",
+		"@types/multer": "^1.4.3",
+		"cors": "^2.8.5",
+		"dotenv-safe": "^8.2.0",
+		"express": "^4.17.1",
+		"geo-distance": "^0.2.0",
+		"graphql-yoga": "^1.18.3",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.9.23",
+		"multer": "^1.4.2",
+		"sharp": "^0.25.4",
+		"ts-node": "^8.10.2",
+		"tsc": "^1.20150623.0",
+		"typescript": "^3.9.6"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "pretty-quick --staged"
+		}
+	}
 }
